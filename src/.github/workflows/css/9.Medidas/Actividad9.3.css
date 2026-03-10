@@ -1,0 +1,9 @@
+.limitado{
+    background-color: lightblue;
+    padding: 10px;
+
+    min-height: 5rem;
+    max-height: 10rem;
+
+    overflow: auto;
+}

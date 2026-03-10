@@ -1,0 +1,59 @@
+.tamañoletra {
+    font-size: 2.5rem;
+}
+
+.tipoletra {
+    font-style: italic;
+}
+
+.grosor {
+    font-weight: 200;
+}
+
+.justificar {
+    text-align: justify;
+}
+
+.separar {
+    letter-spacing: 100px;
+}
+
+.mayus {
+    text-transform: uppercase;
+}
+
+h1.separar:hover {
+    font-style: italic;    
+    color: blue;             
+    cursor: pointer;       
+    transition: all 0.3s ease;
+}
+
+h3.mayus {
+    font-weight: bold;       
+    color: red;             
+}
+
+h3.mayus:hover {
+    font-weight: bold;
+    color: red;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p.justificar {
+    margin-top: 30px;
+    padding: 0 10px;
+}

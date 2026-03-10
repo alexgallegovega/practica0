@@ -1,0 +1,9 @@
+.lista-bat {
+    list-style-type: none;
+    font-size: 24px;
+}
+
+.lista-bat li::before {
+    content: "🦇"; /* Murciélago antes de cada ítem */
+    margin-right: 10px;
+}

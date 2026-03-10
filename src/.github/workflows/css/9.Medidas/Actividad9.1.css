@@ -1,0 +1,37 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.producto{
+    width: 350px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 28px;
+}
+
+h2{
+    font-size: 18px;
+    color: gray;
+}
+
+img{
+    width: 100%;
+    margin: 15px 0;
+}
+
+.modelo, .sku{
+    font-size: 14px;
+}
+
+.precio{
+    font-size: 26px;
+    font-weight: bold;
+    color: green;
+}

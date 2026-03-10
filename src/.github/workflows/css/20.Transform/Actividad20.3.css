@@ -1,0 +1,123 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 3rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.circulos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin: 40px 0;
+    min-height: 150px;
+}
+
+.circulo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.circulo.rojo {
+    background-color: red;
+}
+
+.circulo.azul {
+    background-color: blue;
+    opacity: 0.5;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.circulo.azul:hover {
+    transform: translateX(-80px);
+}
+
+/* Crear un círculo morado de referencia visual */
+.circulos-container::after {
+    content: '';
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: purple;
+    opacity: 0.3;
+    position: absolute;
+    pointer-events: none;
+    margin-left: -60px;
+}
+
+/* Efecto de mezcla cuando el azul se acerca al rojo */
+.circulo.azul:hover {
+    animation: mezclar 0.5s forwards;
+}
+
+@keyframes mezclar {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-80px);
+    }
+}
+
+/* Cambiar la opacidad del azul al moverse para simular mejor la mezcla */
+.circulo.azul:hover {
+    opacity: 0.8;
+    box-shadow: 0 0 20px purple;
+}
+
+.instruccion {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.explicacion {
+    margin-top: 15px;
+    font-size: 1rem;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 600px) {
+    .circulo {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .circulo.azul:hover {
+        transform: translateX(-50px);
+    }
+    
+    .circulos-container::after {
+        width: 80px;
+        height: 80px;
+        margin-left: -40px;
+    }
+}

@@ -1,0 +1,12 @@
+
+p {
+    color: blue;
+}
+
+#Pluton {
+    color: red;
+}
+
+/*Si tenemos esto, el texto será rojo, el Pluton va por encima, y ese 
+párrafo será de color rojo en este caso y/o en otro caso del color que se le asigne al Pluton.
+Pluton va en orden prioritario en primer lugar.

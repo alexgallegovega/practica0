@@ -1,0 +1,38 @@
+body{
+    margin:0;
+    font-family: Arial;
+}
+
+.hero{
+    background:url("fondo.jpg") center/cover;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.btn1{
+    background:#ff5a3c;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    margin-top:20px;
+}
+
+.cta{
+    background:#ff5a3c;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.btn2{
+    background:white;
+    color:black;
+    border:none;
+    padding:12px 25px;
+    margin-top:20px;
+}

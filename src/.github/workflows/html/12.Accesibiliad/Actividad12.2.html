@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Accesible</title>
+</head>
+<body>
+    
+    <a href="#main">Saltar al contenido</a>
+    
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#" aria-current="page">Registro</a>
+    </nav>
+
+    <main id="main">
+        <h1>Formulario de Registro</h1>
+        
+        <form>
+        
+            <label for="nombre">
+                Nombre completo *
+            </label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">
+                Email *
+            </label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">
+                Contraseña *
+            </label>
+            <input type="password" id="password" name="password" required>
+            
+            <input type="checkbox" id="terminos">
+            <label for="terminos">
+                Acepto los términos
+            </label>
+            
+            <button type="submit" aria-label="Enviar formulario">
+                Registrarse
+            </button>
+            
+            <button type="reset" aria-label="Limpiar formulario">
+                Limpiar
+            </button>
+        </form>
+    </main>
+
+</body>
+</html>

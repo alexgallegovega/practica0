@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Altavoces</title>
+</head>
+<body>
+    <h1>Venta de Altavoces</h1>
+    <form method="post">
+        <label for="modelo">Modelo:</label><br>
+        <select id="modelo" name="modelo" required>
+            <option value="">Selecciona modelo</option>
+            <option value="R4">R4</option>
+            <option value="R5">R5</option>
+            <option value="SR1">SR1</option>
+        </select><br><br>
+
+        <label for="potencia">Potencia máxima (50-100 W):</label><br>
+        <input type="number" id="potencia" name="potencia" min="50" max="100" required><br><br>
+
+        <label>¿Bluetooth?</label><br>
+        <input type="radio" id="bluetooth_si" name="bluetooth" value="si" required>
+        <label for="bluetooth_si">Sí</label><br>
+        <input type="radio" id="bluetooth_no" name="bluetooth" value="no">
+        <label for="bluetooth_no">No</label><br><br>
+
+        <label for="color">Color:</label><br>
+        <input type="color" id="color" name="color" value="#000000"><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

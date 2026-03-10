@@ -1,0 +1,9 @@
+.lista-corazon {
+    list-style-type: none; 
+    font-size: 24px;
+}
+
+.lista-corazon li::before {
+    content: "❤️"; 
+    margin-right: 10px;
+}
